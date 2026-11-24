@@ -11,4 +11,5 @@ Live site: https://symonsss11-cmd.github.io/manta-site/
 
 Plain HTML and CSS, hosted with GitHub Pages. Used as the homepage, privacy and terms URLs for the Microsoft sign-in app registration.
 
+
 Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
