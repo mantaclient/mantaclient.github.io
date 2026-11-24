@@ -6,3 +6,5 @@ a{color:#6cb6ff}nav a{margin-right:16px}
 .logo{max-width:260px;height:auto;display:block;margin-bottom:16px}
 ul{padding-left:20px}
 footer{margin-top:3rem;border-top:1px solid #222733;padding-top:16px;font-size:14px}
+.shot{width:100%;height:auto;border-radius:10px;border:1px solid #222733;display:block}
+figure{margin:16px 0}figcaption{font-size:14px;margin-top:6px}
