@@ -57,8 +57,17 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
   font:700 15px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;transition:background .14s var(--ease)}
 .btn svg{width:20px;height:20px}
 .btn:hover{text-decoration:none}
-.btn.primary{color:#fff;background:var(--accent);border-radius:0;cursor:default;
+.btn.primary{color:#fff;background:var(--accent);border-radius:0;cursor:pointer;position:relative;overflow:hidden;
   clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%)}
+.btn.primary::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .55s var(--ease)}
+.btn.primary{transition:background .14s var(--ease),transform .18s var(--ease)}
+.btn.primary:hover{background:#4c86ff;transform:translateY(-3px)}
+.btn.primary:hover::after{left:130%}
+.btn.primary:hover svg{animation:dl-bob .7s var(--ease) infinite}
+.btn.primary:active{transform:translateY(0) scale(.98);background:#1d4fc4}
+@keyframes dl-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.btn.ghost{transition:background .14s var(--ease),transform .18s var(--ease)}
+.btn.ghost:hover{transform:translateY(-2px)}
 .btn.ghost{color:var(--text);background:var(--panel);border:1px solid var(--line-2)}
 .btn.ghost:hover{background:var(--raised)}
 .note{margin:14px 0 0;font-size:14px;color:var(--faint)}
@@ -177,7 +186,7 @@ body:not(.home) footer nav a{margin-right:16px}
   .frame{padding:5px}
   .social{padding:22px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){.btn.primary:hover svg,.btn.primary:hover::after{animation:none;transition:none}*{transition:none!important;scroll-behavior:auto!important}}
 
 /* ---------- Microsoft sign-in (kept visible for app reviewers) ---------- */
 .signin{max-width:var(--wrap);margin:0 auto;padding:0 16px clamp(72px,9vw,112px)}
