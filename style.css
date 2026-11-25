@@ -44,11 +44,13 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 .top nav a.ico{padding:8px;display:grid;place-items:center}
 
 /* ---------- hero ---------- */
-.hero{max-width:var(--wrap);margin:0 auto;padding:clamp(56px,8vw,96px) 16px 0}
+.hero{max-width:var(--wrap);margin:0 auto;padding:clamp(56px,8vw,96px) 16px 0;text-align:center}
+.hero .lead{margin-left:auto;margin-right:auto}
+.hero .cta{justify-content:center}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid var(--line-2);border-radius:99px;background:var(--panel);
   font:600 13px/1 var(--label);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:#facc15}
-.hero h1{font-size:clamp(34px,6.4vw,120px);text-transform:uppercase;letter-spacing:-.01em;margin:0 0 20px}
+.hero h1{font-size:clamp(34px,6.4vw,96px);text-transform:uppercase;letter-spacing:-.01em;margin:0 0 20px}
 .lead{max-width:560px;font-size:18px;color:var(--muted);margin:0 0 30px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 24px;border-radius:var(--radius-sm);
@@ -60,7 +62,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
 .btn.ghost{color:var(--text);background:var(--panel);border:1px solid var(--line-2)}
 .btn.ghost:hover{background:var(--raised)}
 .note{margin:14px 0 0;font-size:14px;color:var(--faint)}
-.hero-shot{margin-top:clamp(48px,7vw,72px)}
+.hero-shot{margin:clamp(48px,7vw,72px) auto 0;max-width:1200px}
 .hero-shot img{image-rendering:auto}
 
 /* ---------- feature bands ---------- */
@@ -127,12 +129,7 @@ body:not(.home) footer nav a{margin-right:16px}
 /* ---------- small screens ---------- */
 /* ---------- large screens ---------- */
 @media (min-width:1400px){
-  :root{--wrap:min(88vw,1760px)}
-}
-@media (min-width:1500px){
-  .hero{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,4vw,96px);align-items:center;padding-bottom:16px}
-  .hero h1{font-size:clamp(48px,3.3vw,104px)}
-  .hero-shot{margin-top:0}
+  :root{--wrap:1320px}
 }
 @media (min-width:1600px){
   body{font-size:17px}
@@ -143,7 +140,7 @@ body:not(.home) footer nav a{margin-right:16px}
   .tile p{font-size:16px}
 }
 @media (min-width:2200px){
-  :root{--wrap:min(86vw,2400px)}
+  :root{--wrap:1480px}
   body{font-size:19px}
   .lead{font-size:23px;max-width:760px}
   .band p,.community-head p,.signin p{font-size:21px}
