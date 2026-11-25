@@ -1,23 +1,154 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manta Client</title><link rel="stylesheet" href="style.css?v=2"></head><body><main>
-<img class="logo" src="logo.png" alt="Manta">
-<h1>Manta Client</h1><p class="muted">A launcher and client mod for Minecraft: Java Edition.</p>
-<p>Manta is a Windows launcher plus an in-game client mod for Minecraft: Java Edition (Fabric). It is a free, independent project.</p>
-<h2>Screenshots</h2>
-<figure><img class="shot" src="launcher.png" alt="Manta launcher home screen" width="1185" height="728"><figcaption class="muted">The Manta launcher</figcaption></figure>
-<figure><img class="shot" src="ingame-menu.jpg" alt="Manta in-game main menu" width="1440" height="810"><figcaption class="muted">The in-game main menu</figcaption></figure>
-<h2>Features</h2>
-<ul>
-<li>Launcher with game profiles and versions, and a mod browser powered by Modrinth</li>
-<li>Built-in performance and quality-of-life mods, each with its own settings</li>
-<li>Friends list with online status, and parties to join servers together</li>
-<li>Cosmetics (capes and emotes) unlocked through quests</li>
-<li>Skin manager and editor</li>
-<li>Instant gameplay clips and a screenshot gallery</li>
-<li>Player stats, FPS reports and lag diagnosis</li>
-<li>Server quick-join from the main menu</li>
-</ul>
-<h2>Microsoft sign-in</h2>
-<p>Manta uses Microsoft sign-in only to authenticate your Minecraft account so you can launch and play the game, the same way the official launcher does. Sign-in happens on Microsoft's own page and Manta does not read or store your password. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
-<h2>Contact</h2>
-<p>Email <a class="em" data-show="1" href="index.html">(enable JavaScript to see the email)</a>.</p>
-<footer class="muted"><nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a class="em" href="index.html">Contact</a></nav><p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p></footer></main><script src="em.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manta Client</title>
+<meta name="description" content="Manta is a free Minecraft: Java Edition launcher and PvP client mod for Fabric. Coming soon.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Schibsted+Grotesk:wght@400;500;600&family=Barlow+Semi+Condensed:wght@600&display=swap">
+<link rel="stylesheet" href="style.css?v=8">
+</head>
+<body class="home">
+
+<header class="top">
+  <a class="brand" href="index.html"><img src="wordmark.svg" alt="Manta Client" width="190" height="26"></a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#community">Community</a>
+    <a class="ico" href="https://youtube.com/@MantaClient" target="_blank" rel="noopener" aria-label="Manta on YouTube"><i class="si yt"></i></a>
+    <a class="ico" href="https://discord.gg/sE9DHmpQ2" target="_blank" rel="noopener" aria-label="Manta Discord"><i class="si dc"></i></a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <h1>The PvP client<br><em>built to feel fast.</em></h1>
+    <p class="lead">A free launcher and Fabric client for Minecraft: Java Edition. Built-in mods, practice drills, friends and parties, clips and cosmetics, all in one place.</p>
+    <div class="cta">
+      <span class="btn primary" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+        Download coming soon
+      </span>
+      <a class="btn ghost" href="https://discord.gg/sE9DHmpQ2" target="_blank" rel="noopener"><i class="si dc"></i>Join the Discord</a>
+    </div>
+    <p class="note">Join the Discord to hear the moment it drops.</p>
+  </div>
+  <figure class="frame hero-shot">
+    <img src="launcher.png" alt="The Manta launcher home screen" width="1185" height="728">
+  </figure>
+</section>
+
+<div id="features">
+<section class="band">
+  <div class="band-text">
+    <h2>Your menu, <em>your client.</em></h2>
+    <p>Manta replaces the title screen with one that knows you: quick-join your servers, see your party, and open every Manta mod with Right Shift.</p>
+    <ul class="ticks">
+      <li>Built-in performance and quality-of-life mods, each with its own settings</li>
+      <li>Movable HUD, including Minecraft's own hotbar, chat and scoreboard</li>
+      <li>Server quick-join right from the main menu</li>
+    </ul>
+  </div>
+  <figure class="frame"><img src="ingame-menu.jpg" alt="Manta's in-game main menu" width="2000" height="1125" loading="lazy"></figure>
+</section>
+
+<section class="band flip">
+  <div class="band-text">
+    <h2>Add mods <em>in one click.</em></h2>
+    <p>Browse Modrinth from inside the launcher. Manta only shows mods that work with your version, checks every file before install, and keeps each profile separate.</p>
+    <ul class="ticks">
+      <li>Profiles for every version, each with its own mods and packs</li>
+      <li>Texture pack browser and organiser with previews</li>
+      <li>Every mod scanned for known malware before launch</li>
+    </ul>
+  </div>
+  <figure class="frame"><img src="mods.png" alt="The Manta launcher Mods page with a Modrinth browser" width="1116" height="679" loading="lazy"></figure>
+</section>
+
+<section class="band capes-band">
+  <div class="band-text">
+    <h2>Capes you <em>earn.</em></h2>
+    <p>Original Manta capes and emotes, unlocked by playing and finishing quests. Animated capes included. Plus a skin manager and editor.</p>
+  </div>
+  <figure class="capes"><img src="capes.png" alt="Six Manta capes: Manta, Royal, Neon Grid, Galaxy, Yin Yang and Sunset" width="970" height="240" loading="lazy"></figure>
+</section>
+
+<section class="more" aria-labelledby="more-h">
+  <h2 id="more-h">Everything else <em>built in.</em></h2>
+  <div class="tiles">
+    <article class="tile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2"/></svg>
+      <h3>PvP practice</h3>
+      <p>Bots and drills for aim, strafing and combos, then duel a friend 1v1.</p>
+    </article>
+    <article class="tile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 3.5a4 4 0 0 1 0 9M22 21a7 7 0 0 0-4-6.3"/></svg>
+      <h3>Friends &amp; parties</h3>
+      <p>See who's online and join servers together.</p>
+    </article>
+    <article class="tile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/></svg>
+      <h3>FPS &amp; lag reports</h3>
+      <p>Player stats, FPS reports and plain-English lag diagnosis.</p>
+    </article>
+    <article class="tile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+      <h3>Instant clips</h3>
+      <p>Save the last moments of a fight with one key, plus a screenshot gallery.</p>
+    </article>
+    <article class="tile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+      <h3>Safe sign-in</h3>
+      <p>Sign-in happens on Microsoft's own page. Manta never sees your password.</p>
+    </article>
+    <article class="tile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+      <h3>Controls</h3>
+      <p>Search keybinds by action or key and fix clashes in one click.</p>
+    </article>
+  </div>
+</section>
+</div>
+
+<section id="sign-in" class="signin">
+  <div class="signin-in">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+    <div>
+      <h2>Microsoft sign-in</h2>
+      <p>Manta uses Microsoft sign-in only to authenticate your Minecraft account so you can launch and play, the same way the official launcher does. Sign-in happens on Microsoft's own page; Manta never sees or stores your password. Your sign-in is kept encrypted on your PC and you can sign out at any time.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="community" class="community">
+  <div class="community-head">
+    <h2>Be there <em>day one.</em></h2>
+    <p>Manta isn't out yet. Follow along for sneak peeks, beta invites and the launch date.</p>
+  </div>
+  <a class="social discord fin" href="https://discord.gg/sE9DHmpQ2" target="_blank" rel="noopener">
+    <i class="si dc"></i>
+    <span><b>Discord</b><small>Chat, feedback and beta news</small></span>
+    <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+  </a>
+  <a class="social youtube" href="https://youtube.com/@MantaClient" target="_blank" rel="noopener">
+    <i class="si yt"></i>
+    <span><b>YouTube</b><small>@MantaClient · trailers and showcases</small></span>
+    <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+  </a>
+</section>
+
+<footer class="foot">
+  <div class="foot-row">
+    <img src="wordmark.svg" alt="Manta Client" width="150" height="20">
+    <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://discord.gg/sE9DHmpQ2" target="_blank" rel="noopener">Discord</a><a href="https://youtube.com/@MantaClient" target="_blank" rel="noopener">YouTube</a></nav>
+  </div>
+  <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+</footer>
+
+</body>
+</html>
