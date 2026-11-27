@@ -1,8 +1,10 @@
 # Manta Client website
 
-Public site for **Manta Client**, a launcher and client mod for Minecraft: Java Edition.
+Website for **Manta Client**, a free Minecraft PvP client: a launcher and Fabric client mod for Minecraft: Java Edition, with parties, built-in PvP mods, practice drills, clips and cosmetics.
 
-Live site: https://symonsss11-cmd.github.io/manta-site/
+About Manta Client: see [github.com/mantaclient](https://github.com/mantaclient). Discord: https://discord.gg/sE9DHmpQ2
+
+Live site: https://mantaclient.github.io/
 
 ## Pages
 - [`index.html`](index.html) - home
